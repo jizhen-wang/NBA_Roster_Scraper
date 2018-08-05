@@ -19,4 +19,4 @@ for link in team_links:
     for item in soup.find("table", {"class": "tablehead"}).children:
         count += 1
         if count > 2:
-            f.write(item.get_text(" ").replace(u'\xa0', u' ')+'\n')
+            f.write(item.get_text("@").replace(u'\xa0', u' ')+'\n')
